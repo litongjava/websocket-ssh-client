@@ -1,4 +1,4 @@
 app:
   host: 127.0.0.1
   port: 22
-  endPoint: wss://127.0.0.1/wsts/socket
+  endPoint: ws://192.168.3.9:5001/wsss/socket
