@@ -1,6 +1,6 @@
 # Websocket-SSH-Client
 ## 1. 简介
-Websocket-SSH-Client是一个基于Go语言开发的服务，它允许SSH客户端通过Websocket进行连接。以下是该服务的工作流程：
+Websocket-SSH-Client是一个基于Go语言开发的服务，它允许SSH客户端通过Websocket连接到远程ssh服务器。以下是该服务的工作流程：
 
 1. **SSH客户端**：这是流程的起点，SSH客户端尝试建立一个连接。
 
@@ -107,7 +107,10 @@ systemctl start wsss
 systemctl status wsss
 systemctl stop wsss
 ```
-
+### docker启动
+```shell
+docker run -dit --name=wsss -p 5001:5001 litongjava/wsss:1.0.0
+```
 ## 3. 安装Websocket-SSH-Client
 Websocket-SSH-Client是一个基于Go语言开发的SSH客户端，它允许你通过Websocket连接到SSH服务器。以下是安装和使用Websocket-SSH-Client的步骤：
 
